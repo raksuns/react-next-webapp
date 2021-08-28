@@ -1,0 +1,38 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "inline-react-svg",
+      {
+        "ssr": true
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": [
+          "."
+        ],
+        "alias": {
+          "@hooks": "./hooks",
+          "@pages": "./pages",
+          "@public": "./public",
+          "@modules": "./modules",
+          "@recoil": "./recoil",
+          "@utils": "./utils", // will connect to all utiliy related functions
+          "@components": "./components", // to all defined components
+          "@widgets": "./components/widgets" //  to all defined widget components
+        }
+      }
+    ]
+  ],
+  "env": {
+    "development": {},
+    "production": {},
+    "test": {
+      "presets": []
+    }
+  }
+}
