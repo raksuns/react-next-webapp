@@ -27,6 +27,7 @@
     "noUnusedParameters": true,
     "removeComments": false,
     "preserveConstEnums": true,
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",

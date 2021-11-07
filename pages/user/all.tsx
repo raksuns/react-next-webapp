@@ -1,9 +1,8 @@
-import Counter from 'components/counter';
 
-const AllUsers = (props: any) => {
+const AllUsers = () => {
     return (
         <div>
-            <Counter/>
+            111
         </div>
     );
 };

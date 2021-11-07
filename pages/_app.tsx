@@ -1,9 +1,7 @@
 import React from "react";
 import { RecoilRoot } from 'recoil';
-
-import '../styles/globals.scss';
 import { CssBaseline, ThemeProvider } from "@material-ui/core";
-
+import '../styles/globals.scss';
 import theme from '../components/theme';
 
 export default function App({Component, pageProps}) {
