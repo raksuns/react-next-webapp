@@ -1,0 +1,42 @@
+@import "./mixin";
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@include desktop {
+  .box {
+    padding-bottom: 27% !important;
+  }
+}
+
+@include tablet {
+  .box {
+    padding-bottom: 40% !important;
+  }
+}
+
+@include st {
+  .box {
+    padding-bottom: 70% !important;
+  }
+}
+
+@include mobile {
+  .box {
+    padding-bottom: 70% !important;
+  }
+}
+
+
